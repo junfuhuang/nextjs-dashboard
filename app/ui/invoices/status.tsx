@@ -1,6 +1,8 @@
 import { CheckIcon, ClockIcon } from '@heroicons/react/24/outline';
+{/* clsx：一个用于条件拼接 CSS 类名的小工具库，便于根据状态动态切换样式 */}
 import clsx from 'clsx';
 
+{/* 接收 status 属性（字符串类型，比如 'pending', 'paid'）的组件 */}
 export default function InvoiceStatus({ status }: { status: string }) {
   return (
     <span
