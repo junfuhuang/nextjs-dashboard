@@ -13,6 +13,13 @@
 
 ## 运行项目
 ```bash
-npm i
-npm run dev
+pnpm i
+pnpm run dev
 ```
+
+## 连接数据库
+- 访问 vercel.com（https://vercel.com/signup）创建用户，选择导入创建的 github 项目；
+- 选择 Neon 数据库，默认区域选择华盛顿特区，创建数据库之后将 .env.local 选项卡的信息保存到项目本地的 .env.example 中，将 .env.example 修改为 .env；
+- 使用 pnpm run dev 运行项目，然后导航到 http://localhost:3000/seed，可以看到数据库初始化成功的信息，导航到 http://localhost:3000/query 可以看到一条数据信息；
+
+
